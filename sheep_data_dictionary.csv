@@ -1,0 +1,11 @@
+﻿Column Name,Description,Data type,Length,Format,Nullable,Example
+condition_id,"ID of the initial condition: 1 drawing from memory, 2 priming with the picture of a sheep",INTEGER,1,"1,2",FALSE,1
+chain_id,ID of the transmission chain to which the drawing belongs,INTEGER,1,1-5,FALSE,1
+individual_id,ID of the order of the individual within the transimission chain,INTEGER,1,1-6,FALSE,1
+tail_presence,Flag indicating if the drawing has a tail,BOOL,1,0-1,FALSE,1
+prior_knowledge_about_tail,Flag indicating if the trait of having a tail was lost in the ,VARCHAR,2,"Y,N,NA",FALSE,Y
+sex,Self reported sex of the participant,VARCHAR,6,Male/Female,FALSE,M
+age_group,Observed age group of the participant,VARCHAR,5,Old/Young,FALSE,Old
+tail_description,Description of the tail (if there is one) done by the experimenters. Categorizes the type of tail that was drawn,VARCHAR,22,,FALSE,little elongated cloud
+other_attributes,Description of relevant other attributes of the drawing made by the experimenters,VARCHAR,80,,TRUE,interesting beak
+picture_name,"ID of the picture in the ""images"" folder",VARCHAR,9,Sheep_XXX,FALSE,Sheep_111
