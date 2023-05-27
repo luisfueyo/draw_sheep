@@ -10,7 +10,7 @@ df <- df |>
   mutate_at(vars(ends_with("_id")), ~as_factor(.))
 
 # 2. Data wrangling ----
-## We take the mean for each group, both for the initial condition and age
+## We take the mean for each group for comparing between initial conditions
 condition <- df |> 
   group_by(condition_id) |> 
   summarise(tail = mean(tail_presence)) |> 
